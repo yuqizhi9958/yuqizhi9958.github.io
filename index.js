@@ -23,4 +23,4 @@ let server = http.createServer((request,response)=>{
 })
 
 //开启监听
-server.listen(80,'127.0.0.1',()=>console.log('success'));
+server.listen(5050,'0.0.0.0',()=>console.log('success'));
