@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
  	<head>
 		<title>Solana</title>
@@ -26,11 +25,10 @@
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" media="screen" href="css/style-ie.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ei8fix.css" ><![endif]-->
 		
-		<!-- flexslider slider CSS -->
-
-		<link rel="stylesheet" type="text/css" href="css/flexslider.css"  >
-		
-        <!--end flexslider slider CSS -->
+		<!-- Sequence slider CSS -->
+		<link rel="stylesheet" type="text/css" href="css/sequencejs-theme.modern-slide-in2.css" >
+		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" media="screen" href="css/sequencejs-theme.modern-slide-in2.ie.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/sequencejs-theme.modern-slide-in2.ie8.css" ><![endif]-->
 		
  
 <!-- CSS end -->
@@ -76,8 +74,8 @@
 <!-- HEADER -->
 		<header id="header" >
 			<div class="container clearfix">
-				<div class="sixteen columns header-position">
-						<div class="header-container m-top-30 clearfix">
+				<div class="sixteen columns">
+						<div class="header-container m-top-30 m-bot-50 clearfix">
 				
 							<div class="header-logo-container ">
 								<div class="logo-container">	
@@ -94,8 +92,8 @@
 										<li class="current"><a href="index.html">Home</a>
 											<ul>
 												<li><a href="index2.html">Home 2</a></li>
-												<li><a href="index3.html">Home 3</a></li>
-												<li><a href="index4.html">Home 4</a></li>
+												<li ><a href="index3.html">Home 3</a></li>
+												<li class="current"><a href="index4.html">Home 4</a></li>
 												<li><a href="index5.html">Home 5</a></li>
 											</ul>
 										</li>
@@ -148,94 +146,59 @@
 			</div>
 
 		</header>
+
+
 <!-- SLIDER -->
- <div class="slider-1 clearfix">
-   
-     <div class="flex-container">
-       <div class="flexslider loading">
-        <ul class="slides">
-          <li style="background:url(images/sliders/slider-1/slider-bg-1.jpg) no-repeat;background-position:50% 0">
-          
-           <div class="container">
-           <div class="sixteen columns contain">
-            
-             <h2 data-toptitle="36%">MULTIPURPOSE THEME</h2>
-             <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
-             <div class="links" data-bottomlinks="30%">
-               <a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
-             </div>
-             
-             <img src="images/sliders/slider-1/slider-item-1.png" class="item" alt="slide-item"  data-topimage="21%"/>
-           
-           </div>
-         </div><!-- End Container -->
-          
-          </li><!-- End item -->
-          
-          
-          <li style="background:url(images/sliders/slider-1/slider-bg-2.jpg) no-repeat; background-position:50% 0">
-          
-          <div class="container">
-           <div class="sixteen columns contain">
-            
-             <h2 data-toptitle="36%">LOREM IPSUM</h2>
-             <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
-             <div class="links" data-bottomlinks="30%">
-				<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
-             </div>
-
-           </div>
-         </div><!-- End Container -->
-          
-         </li><!-- End item -->
-         
-         
-         <li style="background:url(images/sliders/slider-1/slider-bg-3.jpg) no-repeat; background-position:50% 0">
-          
-          <div class="container">
-           <div class="sixteen columns contain">
-            
-             <h2 data-toptitle="36%">ALES MAECENAS</h2>
-             <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
-             <div class="links" data-bottomlinks="30%">
-				<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
-             </div>
-             
-             <img src="images/sliders/slider-1/slider-item-2.png" class="item" alt="slide-item" data-topimage="24%"/>
-           
-           </div>
-         </div><!-- End Container -->
-          
-         </li><!-- End item -->
-      
-         
-        </ul>
-       </div>
-      </div>
-     
-   </div><!-- End slider -->
-
-	
-<!-- 3 BLOCKS (1 ver) -->
-	<div class="container clearfix m-bot-35 min-m-top-75">
-		<div class="sixteen columns m-bot-15">
-		<!-- BLOCK -->
-			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-0-content-container">
-						<div class="block-text">
-							WE PROVIDE<br>
-							AWESOME DIGITAL<br>
-							<strong>SERVICES</strong>
-						</div>
-						<div class="block-r-m-container">
-							<a class="button medium r-m-plus r-m-full" href="l">READ MORE</a>
-						</div>
-				</div>		
+<div class="container m-bot-50">
+	<div id="slider-container" class="sixteen columns content-container-white sequence-theme-6">
+		<div id="sequence-theme">
+			<div id="sequence" class="theme-2">
+				<ul>
+					<li class="animate-in">
+						<h2 class="title">Welcome to Solana</h2>
+						<h3 class="subtitle">Multi-purpose Creative Business</h3>
+						<p class="subtitle-2 slider-caption">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						<p class="subtitle-3">
+							<a class="button get-theme" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">GET THE THEME</a>
+						</p>
+						<img class="model" src="images/model6-1.png" alt="Model 1" />
+					</li>
+					<li>
+						<h2 class="title slide-2-light">Lorem Ipsum</h2>
+						<h3 class="subtitle slide-2-bold">ic fravus sinber</h3>
+						<p class="subtitle-2 slide-2-yellow">&amp; tristiqueve porttitor</p>
+						<p class="subtitle-3">
+							<a class="button  get-theme" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">GET THE THEME</a>
+						</p>
+						<img class="model" src="images/model6-2.png" alt="Model 2" />
+					</li>
+					<li>
+						<h2 class="title">Welcome to Solana</h2>
+						<h3 class="subtitle ">Multi-purpose Creative Business</h3>
+						<p class="subtitle-2 slider-caption">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+						<p class="subtitle-3">
+							<a class="button  get-theme" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">GET THE THEME</a>
+						</p>
+						<img class="model" src="images/model6-3.png" alt="Model 3" />
+					</li>
+				</ul>
+				<div class="arrows-nav ">
+					<img class="prev slider1" src="images/bt-prev.png" alt="Previous Frame" ><img class="next slider1" src="images/bt-next.png" alt="Next Frame" >
+				</div>
 			</div>
+			
+		</div>	
+	</div>
+</div>
+		
+		
+	
+<!--NEW 3 BLOCKS (3 ver) -->
+	<div class="container clearfix m-bot-35">
 		<!-- BLOCK -->
-			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-1-content-container">
-					<a class=" clearfix" href="">
+			<div class="four columns m-bot-35 ca-menu">
+				<div class=" content-container-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
 						<div class="ca-icon">
 							<img src="images/icon-comp.png" alt="icon-comp">
 						</div>
@@ -248,9 +211,9 @@
 			</div>
 			
 		<!-- BLOCK -->
-			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-2-content-container">
-					<a class=" clearfix" href="">
+			<div class="four columns m-bot-20 ca-menu">
+				<div class="content-container-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
 						<div class="ca-icon">
 							<img src="images/icon-gears.png" alt="icon-gears">
 						</div>
@@ -262,9 +225,9 @@
 				</div>		
 			</div>
 		<!-- BLOCK -->
-			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-3-content-container">
-					<a class=" clearfix" href="">
+			<div class="four columns m-bot-20 ca-menu">
+				<div class=" content-container-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
 						<div class="ca-icon">
 							<img src="images/icon-plane.png" alt="icon-plane">
 						</div>
@@ -276,8 +239,20 @@
 				</div>		
 			</div>
 			
-
-		</div>
+		<!-- BLOCK -->
+			<div class="four columns m-bot-20 ca-menu">
+				<div class=" content-container-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
+						<div class="ca-icon">
+							<img src="images/icon-seo.png" alt="icon-seo">
+						</div>
+						<div class="ca-content">
+							<h2 class="ca-main">SEO FRIENDLY</h2>
+							<h3 class="ca-sub">Sed ut perspiciatis unde omnis iste natus error sit.</h3>
+						</div>
+					</a>	
+				</div>		
+			</div>
 	</div>
 	
 </div>	<!-- Grey bg end -->	
@@ -300,7 +275,7 @@
 					</div>
 				</div>
 				<div class="button-buy-container">
-					<a class="" href="">PURCHASE IT</a>
+					<a class="" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">PURCHASE IT</a>
 				</div>
 			</div>
 		</div>
@@ -521,40 +496,118 @@
 <!-- OUR PROJECTS End -->
 
 
+<!-- TABS AND TESTIMONIALS -->
+<div class="container clearfix">
+		<div class="eight columns m-bot-35">
+				<!-- TABS -->
 
+						<div class="caption-container-main m-bot-30">
+							<div class="caption-text-container"><span class="bold">OUR</span> SEVICES</div>
+							<div class="content-container-white caption-bg "></div>
+						</div>
 
-<!-- FEATURES 2 -->
-	
-<div class="light-grey-bg m-top-30">
-	<div class="container clearfix pad-t-b-30">
+				
+						<ul class="tabs-nav">
+							<li class="active">
+								<a href="#tab1">First</a>
+							</li>
+							<li class="">
+								<a href="#tab2">Second</a>
+							</li>
+							<li class="">
+								<a href="#tab3">Third</a>
+							</li>
+						</ul>
+						<div class="content-container-white tab-main-container">
+							<div id="tab1" class="tab-content" >
+								<ul class="tab-post-container text">
+									<li>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula. Aenean nisl orci.<br><br>
+										Aenean nisl orci, condim entum ultrices consequat eu, vehicula ac. Lorem ipsum dolor sit amet.</p>
+									</li>
+									
+								</ul>
+							</div>
+							<div id="tab2" class="tab-content" >
+								<ul class="tab-post-container text">
+									<li>
+										<p>Aenean nisl orci, condim entum ultrices consequat eu, vehicula ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci.<br><br>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula.</p>
+									</li>
+								</ul>
+							</div>
+							<div id="tab3" class="tab-content" >
+								<ul class="tab-post-container text">
+									<li>
+										<p>Ut adipiscing, leo nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Ut adipiscing, leo nec. Aenean nisl orci.<br><br>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+		</div>
+
+		<!-- TESTIMONIALS -->
+	<div class="eight columns">
+
+						<div class="caption-container-main m-bot-30">
+							<div class="caption-text-container">TESTIMONIALS</div>
+							<div class="caption-bg"></div>
+							<div class="carousel-navi jcarousel-scroll caption-control">
+								<div class="jcarousel-prev"></div>
+								<div class="jcarousel-next"></div>
+							</div>
+						</div>
+
+			
 		
-			<div class=" clearfix">	
-				<div class="eight columns">
-					<div class="features-2-container-img">
-						<img src="images/features-icon.png" alt="features">
-					</div>
-				</div>
-				<div class="four columns features-demo">
-					<div class="features-2-text">
-						FULLY<br>
-						<strong>RESPONSIVE</strong>
-					</div>			
-				</div>
-				<div class="four columns columns features-demo">
-					<ul class="features-check-list check-icon">
-						<li >Fully Responsive</li>
-						<li >Retina Ready</li>
-						<li >SEO Optimized</li>
-						<li >Easy to Customize</li>
-					</ul>
-				</div>	
-			</div>	
+		<!-- jCAROUSEL -->
+		<div class="jcarousel testimonials-jc m-bot-35" >
+			<ul>
+				<!-- TESTIMONIALS ITEM -->
+				<li class="eight columns alpha">
+							<div class="testimonial-quote ">
+								<div class="quote-content content-container-grey">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula. Aenean nisl orci, condim. Ut adipiscing, leo nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut adipiscing, leo nec. Aenean nisl orci, condim entum ultrices consequat eu, vehicula.</p>
+									<p class="right-text t-a-container"><span class="author-testimonial">- John Doe</span><span class="quote-author-description">, CEO, Company</span>
+									</p>
+								</div>
+							</div>
+				</li>
+				<!-- TESTIMONIALS ITEM -->
+				<li class="eight columns alpha">
+							<div class="testimonial-quote ">
+								<div class="quote-content content-container-grey">
+									<p>Ut adipiscing, leo nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula. Aenean nisl orci, condim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut adipiscing, leo nec. Aenean nisl orci, condim entum ultrices consequat eu, vehicula.</p>
+									<p class="right-text t-a-container"><span class="author-testimonial">- John Doe</span><span class="quote-author-description">, CEO, Company</span>
+									</p>
+								</div>
+							</div>
+				</li>
+				<!-- TESTIMONIALS ITEM -->
+				<li class="eight columns alpha">
+							<div class="testimonial-quote ">
+								<div class="quote-content content-container-grey">
+									<p>Aenean nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula. Aenean nisl orci, condim. Ut adipiscing, leo nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut adipiscing, leo nec. Orci, condim entum ultrices consequat eu, vehicula.</p>
+									<p class="right-text t-a-container"><span class="author-testimonial">- John Doe</span><span class="quote-author-description">, CEO, Company</span>
+									</p>
+								</div>
+							</div>
+				</li>
+			</ul>
+		</div>
 		
-	</div>
+		<!-- jCAROUSEL End -->
+		
+		
+	</div>	
+		
+
 </div>
 
+
 <!-- LATEST NEWS -->
-	<div class="container clearfix m-top-60">
+	<div class="container clearfix m-top-30">
 		<div class="four columns carousel-intro m-bot-33">
 
 						<div class="caption-container m-bot-20">
@@ -590,7 +643,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Craes</span> Nustro</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -618,7 +671,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Sed</span> Lectus</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -646,7 +699,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -674,7 +727,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -702,7 +755,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -817,14 +870,14 @@
 					</div>
 					<div class="footer-social-links-container">	
 						<ul class="social-links clearfix">
-							<li><a class="facebook-link" target="_blank" title="Facebook" href=""></a></li>
-							<li><a class="skype-link" target="_blank" title="Skype" href=""></a></li>
-							<li><a class="twitter-link" target="_blank" title="Twitter" href=""></a></li>
-							<li><a class="flickr-link" target="_blank" title="Flickr" href=""></a></li>
-							<li><a class="vimeo-link" target="_blank" title="Vimeo" href=""></a></li>
-							<li><a class="linkedin-link" target="_blank" title="linkedin" href=""></a></li>
-							<li><a class="pintrest-link" target="_blank" title="pintrest" href=""></a></li>
-							<li><a class="googleplus-link" target="_blank" title="googleplus" href=""></a></li>
+							<li><a class="facebook-link" target="_blank" title="Facebook" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="skype-link" target="_blank" title="Skype" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="twitter-link" target="_blank" title="Twitter" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="flickr-link" target="_blank" title="Flickr" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="vimeo-link" target="_blank" title="Vimeo" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="linkedin-link" target="_blank" title="linkedin" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="pintrest-link" target="_blank" title="pintrest" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="googleplus-link" target="_blank" title="googleplus" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
 						</ul>
 					</div>
 					
@@ -835,15 +888,15 @@
 					<ul class="latest-post">
 						<li class="standart-post">
 							<h4 class="title-post-footer"><a href="blog-single.html">Donec id elit</a></h4>
-							<h4 class="date-post-footer">July 10, 2016</h4>
+							<h4 class="date-post-footer">July 10, 2013</h4>
 						</li>
 						<li class="image-post">
 							<h4 class="title-post-footer"><a href="blog-single.html">Donec id elit</a></h4>
-							<h4 class="date-post-footer">July 10, 2016</h4>
+							<h4 class="date-post-footer">July 10, 2013</h4>
 						</li>
 						<li class="video-post">
 							<h4 class="title-post-footer"><a href="blog-single.html">Donec id elit</a></h4>
-							<h4 class="date-post-footer">July 10, 2016</h4>
+							<h4 class="date-post-footer">July 10, 2013</h4>
 						</li>
 					</ul>
 				</div>
@@ -857,8 +910,8 @@
 							(123) 456-7890<br>(123) 987-6540
 						</li>
 						<li class="footer-mail">
-							<a href="">email@felius.com</a><br>
-							<a href="">email@optimas.com</a>
+							<a href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">email@felius.com</a><br>
+							<a href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">email@optimas.com</a>
 						</li>
 					</ul>
 					 
@@ -876,12 +929,11 @@
 								<li><a href="portfolio.html">Portfolio</a></li>
 								<li><a href="blog.html">Blog</a></li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="">Purchase</a></li>
+								<li><a href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">Purchase</a></li>
 							</ul>
 						</nav>
 					</div>	
-					<div class="footer-copyright-container right-text">
-					&copy; Solan<span class="yellow">a</span> - Build with Passion by <a class="author" href="">AbcGomel</a>
+					<div class="footer-copyright-container right-text">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
 					</div>
 				</div>
 				
@@ -898,10 +950,10 @@
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/superfish.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-		<!-- Flex Slider  -->
-		<script src="js/jquery.flexslider.js"></script> 
-		<script src="js/flex-slider.js"></script> 
-		<!-- end Flex Slider -->
+		<!-- sequence js -->
+		<script type="text/javascript" src="js/sequence.jquery-min.js"></script>
+		<script type="text/javascript" src="js/sequence-slider2.js"></script>
+		<!-- end sequence js -->
 		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
 		<script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>

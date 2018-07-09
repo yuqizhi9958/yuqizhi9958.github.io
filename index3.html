@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
  	<head>
 		<title>Solana</title>
@@ -26,11 +25,12 @@
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" media="screen" href="css/style-ie.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ei8fix.css" ><![endif]-->
 		
-		<!-- flexslider slider CSS -->
-
-		<link rel="stylesheet" type="text/css" href="css/flexslider.css"  >
+		<!-- Sequence slider CSS -->
+		<link rel="stylesheet" type="text/css" href="css/sequencejs-theme.modern-slide-in.css" >
+		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" media="screen" href="css/sequencejs-theme.modern-slide-in.ie.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/sequencejs-theme.modern-slide-in.ie8.css" ><![endif]-->
 		
-        <!--end flexslider slider CSS -->
+        <!--end Sequence slider CSS -->
 		
  
 <!-- CSS end -->
@@ -76,8 +76,8 @@
 <!-- HEADER -->
 		<header id="header" >
 			<div class="container clearfix">
-				<div class="sixteen columns header-position">
-						<div class="header-container m-top-30 clearfix">
+				<div class="sixteen columns">
+						<div class="header-container m-top-30 m-bot-50 clearfix">
 				
 							<div class="header-logo-container ">
 								<div class="logo-container">	
@@ -94,7 +94,7 @@
 										<li class="current"><a href="index.html">Home</a>
 											<ul>
 												<li><a href="index2.html">Home 2</a></li>
-												<li><a href="index3.html">Home 3</a></li>
+												<li class="current"><a href="index3.html">Home 3</a></li>
 												<li><a href="index4.html">Home 4</a></li>
 												<li><a href="index5.html">Home 5</a></li>
 											</ul>
@@ -148,96 +148,110 @@
 			</div>
 
 		</header>
+
+
 <!-- SLIDER -->
- <div class="slider-1 clearfix">
-   
-     <div class="flex-container">
-       <div class="flexslider loading">
-        <ul class="slides">
-          <li style="background:url(images/sliders/slider-1/slider-bg-1.jpg) no-repeat;background-position:50% 0">
-          
-           <div class="container">
-           <div class="sixteen columns contain">
-            
-             <h2 data-toptitle="36%">MULTIPURPOSE THEME</h2>
-             <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
-             <div class="links" data-bottomlinks="30%">
-               <a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
-             </div>
-             
-             <img src="images/sliders/slider-1/slider-item-1.png" class="item" alt="slide-item"  data-topimage="21%"/>
-           
-           </div>
-         </div><!-- End Container -->
-          
-          </li><!-- End item -->
-          
-          
-          <li style="background:url(images/sliders/slider-1/slider-bg-2.jpg) no-repeat; background-position:50% 0">
-          
-          <div class="container">
-           <div class="sixteen columns contain">
-            
-             <h2 data-toptitle="36%">LOREM IPSUM</h2>
-             <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
-             <div class="links" data-bottomlinks="30%">
-				<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
-             </div>
+	<div id="slider-container" class="container clearfix">
+		<div class="sixteen columns">
+			<div id="sequence-theme">
 
-           </div>
-         </div><!-- End Container -->
-          
-         </li><!-- End item -->
-         
-         
-         <li style="background:url(images/sliders/slider-1/slider-bg-3.jpg) no-repeat; background-position:50% 0">
-          
-          <div class="container">
-           <div class="sixteen columns contain">
-            
-             <h2 data-toptitle="36%">ALES MAECENAS</h2>
-             <p data-bottomtext="39%">CRAS JUSTO ODIO, DAPIBUS AC FACILISIS </p>
-             <div class="links" data-bottomlinks="30%">
-				<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
-             </div>
-             
-             <img src="images/sliders/slider-1/slider-item-2.png" class="item" alt="slide-item" data-topimage="24%"/>
-           
-           </div>
-         </div><!-- End Container -->
-          
-         </li><!-- End item -->
-      
-         
-        </ul>
-       </div>
-      </div>
-     
-   </div><!-- End slider -->
+				<div id="sequence">
 
+					<ul>
+					<!-- SLIDE -->
+						<li class="animate-in">
+							<img class="bg-slide" src="images/bg-1-1.jpg" alt="bg 1" />
+
+							<img class="model" src="images/model1-1.png" alt="Model 1" />
+							
+							<div class="title">
+								<h2 ><span class="bold" >SIT</span> LECTUS AMET</h2>
+								<p class="subtitle-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							</div>
+							<div class="subtitle-3">
+								<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
+							</div>
+
+						</li>
+					<!-- SLIDE -->	
+						<li>
+							<img class="bg-slide" src="images/bg-2-1.jpg" alt="bg 2" />
+
+							<img class="model" src="images/model2-1.png" alt="Model 2" />
+							
+							<div class="title">
+								<h2 ><span class="bold" >LOREM</span> IPSUM</h2>
+								<p class="subtitle-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							</div>
+							<div class="subtitle-3">
+								<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
+							</div>
+							
+						</li>
+					<!-- SLIDE -->	
+						<li>
+							<img class="bg-slide" src="images/bg-3-1.jpg" alt="bg 3" />
+
+							<img class="model" src="images/model3-1.png" alt="Model 3" />
+							
+							<div class="title">
+								<h2 ><span class="bold" >ALES</span> MAECENAS</h2>
+								<p class="subtitle-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							</div>
+							<div class="subtitle-3">
+								<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<div class="slider-nav-bg"></div>
+				<ul class="nav">
+					<li class="bw-wrapper"><img  src="images/tn-model1-1.jpg" alt="Model 1" /></li>
+					<li class="bw-wrapper"><img  src="images/tn-model2-1.jpg" alt="Model 2" /></li>
+					<li class="bw-wrapper"><img  src="images/tn-model3-1.jpg" alt="Model 3" /></li>
+				</ul>
+				<div class="arrows-nav ">
+					<img class="prev slider1" src="images/bt-prev.png" alt="Previous Frame" ><img class="next slider1" src="images/bt-next.png" alt="Next Frame" >
+				</div>
+
+			</div>
+		</div>		
+	</div>		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
-<!-- 3 BLOCKS (1 ver) -->
-	<div class="container clearfix m-bot-35 min-m-top-75">
+<!-- 3 BLOCKS ( ver 1 black) -->
+	<div class="container clearfix m-bot-35 ">
 		<div class="sixteen columns m-bot-15">
 		<!-- BLOCK -->
 			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-0-content-container">
+				<div class="block-0-content-container block-black-text">
 						<div class="block-text">
 							WE PROVIDE<br>
 							AWESOME DIGITAL<br>
 							<strong>SERVICES</strong>
 						</div>
 						<div class="block-r-m-container">
-							<a class="button medium r-m-plus r-m-full" href="l">READ MORE</a>
+							<a class="button medium r-m-plus r-m-full" href="blog-single.html">READ MORE</a>
 						</div>
 				</div>		
 			</div>
 		<!-- BLOCK -->
 			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-1-content-container">
-					<a class=" clearfix" href="">
+				<div class="block-1-content-container block-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
 						<div class="ca-icon">
-							<img src="images/icon-comp.png" alt="icon-comp">
+							<img src="images/icon-comp-white.png" alt="icon-comp">
 						</div>
 						<div class="ca-content">
 							<h2 class="ca-main">RESPONSIVE TEMPLATE</h2>
@@ -249,10 +263,10 @@
 			
 		<!-- BLOCK -->
 			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-2-content-container">
-					<a class=" clearfix" href="">
+				<div class="block-2-content-container block-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
 						<div class="ca-icon">
-							<img src="images/icon-gears.png" alt="icon-gears">
+							<img src="images/icon-gears-white.png" alt="icon-gears">
 						</div>
 						<div class="ca-content">
 							<h2 class="ca-main">EASY TO CUSTOMIZE</h2>
@@ -263,10 +277,10 @@
 			</div>
 		<!-- BLOCK -->
 			<div class="block-4-col m-bot-20 ca-menu">
-				<div class="block-3-content-container">
-					<a class=" clearfix" href="">
+				<div class="block-3-content-container block-black">
+					<a class=" clearfix" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">
 						<div class="ca-icon">
-							<img src="images/icon-plane.png" alt="icon-plane">
+							<img src="images/icon-plane-white.png" alt="icon-plane">
 						</div>
 						<div class="ca-content">
 							<h2 class="ca-main">RETINA READY</h2>
@@ -300,7 +314,7 @@
 					</div>
 				</div>
 				<div class="button-buy-container">
-					<a class="" href="">PURCHASE IT</a>
+					<a class="" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">PURCHASE IT</a>
 				</div>
 			</div>
 		</div>
@@ -521,37 +535,59 @@
 <!-- OUR PROJECTS End -->
 
 
-
-
-<!-- FEATURES 2 -->
+<!-- FEATURES -->
 	
 <div class="light-grey-bg m-top-30">
-	<div class="container clearfix pad-t-b-30">
+	<div class="container clearfix">
 		
 			<div class=" clearfix">	
-				<div class="eight columns">
-					<div class="features-2-container-img">
-						<img src="images/features-icon.png" alt="features">
-					</div>
-				</div>
-				<div class="four columns features-demo">
-					<div class="features-2-text">
-						FULLY<br>
-						<strong>RESPONSIVE</strong>
-					</div>			
-				</div>
-				<div class="four columns columns features-demo">
+				<div class="one-third column">
 					<ul class="features-check-list check-icon">
-						<li >Fully Responsive</li>
+						<li >Fully Responsive Design</li>
 						<li >Retina Ready</li>
 						<li >SEO Optimized</li>
 						<li >Easy to Customize</li>
 					</ul>
+				</div>
+				<div class="one-third column features-demo">
+								<article class="box-icon clearfix">
+									<i class="icon-file"></i>
+									<h3>Valid HTML</h3>
+									<p>Lorem ipsum dolor sitam</p>
+								</article>
+								<article class="box-icon clearfix">
+									<i class="icon-desktop"></i>
+									<h3>Cross Browser Compatible</h3>
+									<p>Lorem ipsum dolor sitam</p>
+								</article>
+								<article class="box-icon clearfix">
+									<i class="icon-tablet"></i>
+									<h3>Touch Support</h3>
+									<p>Lorem ipsum dolor sitam</p>
+								</article>
+				</div>
+				<div class="one-third column features-demo">
+								<article class="box-icon clearfix">
+									<i class="icon-magic"></i>
+									<h3>Unlimited Colors</h3>
+									<p>Lorem ipsum dolor sitam</p>
+								</article>
+								<article class="box-icon clearfix">
+									<i class="icon-font"></i>
+									<h3>Google Fonts</h3>
+									<p>Lorem ipsum dolor sitam</p>
+								</article>
+								<article class="box-icon clearfix">
+									<i class="icon-rocket"></i>
+									<h3>390+ Icons</h3>
+									<p>Lorem ipsum dolor sitam</p>
+								</article>
 				</div>	
 			</div>	
-		
+	
 	</div>
 </div>
+
 
 <!-- LATEST NEWS -->
 	<div class="container clearfix m-top-60">
@@ -590,7 +626,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Craes</span> Nustro</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -618,7 +654,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Sed</span> Lectus</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -646,7 +682,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -674,7 +710,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -702,7 +738,7 @@
 										<a class="a-invert" href="blog-single.html" ><span class="bold">Lorem</span> Ipsum</a>
 									<div class="lp-item-container-border clearfix">
 										<div class="lp-item-info-container">
-											10 Okt 2016 | 7 Comments 
+											10 Okt 2013 | 7 Comments 
 										</div>
 									</div>
 							</div>
@@ -817,14 +853,14 @@
 					</div>
 					<div class="footer-social-links-container">	
 						<ul class="social-links clearfix">
-							<li><a class="facebook-link" target="_blank" title="Facebook" href=""></a></li>
-							<li><a class="skype-link" target="_blank" title="Skype" href=""></a></li>
-							<li><a class="twitter-link" target="_blank" title="Twitter" href=""></a></li>
-							<li><a class="flickr-link" target="_blank" title="Flickr" href=""></a></li>
-							<li><a class="vimeo-link" target="_blank" title="Vimeo" href=""></a></li>
-							<li><a class="linkedin-link" target="_blank" title="linkedin" href=""></a></li>
-							<li><a class="pintrest-link" target="_blank" title="pintrest" href=""></a></li>
-							<li><a class="googleplus-link" target="_blank" title="googleplus" href=""></a></li>
+							<li><a class="facebook-link" target="_blank" title="Facebook" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="skype-link" target="_blank" title="Skype" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="twitter-link" target="_blank" title="Twitter" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="flickr-link" target="_blank" title="Flickr" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="vimeo-link" target="_blank" title="Vimeo" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="linkedin-link" target="_blank" title="linkedin" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="pintrest-link" target="_blank" title="pintrest" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
+							<li><a class="googleplus-link" target="_blank" title="googleplus" href="#item/solana-responsive-html5-template/5590059?ref=abcgomel"></a></li>
 						</ul>
 					</div>
 					
@@ -835,15 +871,15 @@
 					<ul class="latest-post">
 						<li class="standart-post">
 							<h4 class="title-post-footer"><a href="blog-single.html">Donec id elit</a></h4>
-							<h4 class="date-post-footer">July 10, 2016</h4>
+							<h4 class="date-post-footer">July 10, 2013</h4>
 						</li>
 						<li class="image-post">
 							<h4 class="title-post-footer"><a href="blog-single.html">Donec id elit</a></h4>
-							<h4 class="date-post-footer">July 10, 2016</h4>
+							<h4 class="date-post-footer">July 10, 2013</h4>
 						</li>
 						<li class="video-post">
 							<h4 class="title-post-footer"><a href="blog-single.html">Donec id elit</a></h4>
-							<h4 class="date-post-footer">July 10, 2016</h4>
+							<h4 class="date-post-footer">July 10, 2013</h4>
 						</li>
 					</ul>
 				</div>
@@ -857,8 +893,8 @@
 							(123) 456-7890<br>(123) 987-6540
 						</li>
 						<li class="footer-mail">
-							<a href="">email@felius.com</a><br>
-							<a href="">email@optimas.com</a>
+							<a href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">email@felius.com</a><br>
+							<a href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">email@optimas.com</a>
 						</li>
 					</ul>
 					 
@@ -876,12 +912,11 @@
 								<li><a href="portfolio.html">Portfolio</a></li>
 								<li><a href="blog.html">Blog</a></li>
 								<li><a href="contact.html">Contact</a></li>
-								<li><a href="">Purchase</a></li>
+								<li><a href="#item/solana-responsive-html5-template/5590059?ref=abcgomel">Purchase</a></li>
 							</ul>
 						</nav>
 					</div>	
-					<div class="footer-copyright-container right-text">
-					&copy; Solan<span class="yellow">a</span> - Build with Passion by <a class="author" href="">AbcGomel</a>
+					<div class="footer-copyright-container right-text">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
 					</div>
 				</div>
 				
@@ -898,10 +933,10 @@
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/superfish.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-		<!-- Flex Slider  -->
-		<script src="js/jquery.flexslider.js"></script> 
-		<script src="js/flex-slider.js"></script> 
-		<!-- end Flex Slider -->
+		<!-- sequence js -->
+		<script type="text/javascript" src="js/sequence.jquery-min.js"></script>
+		<script type="text/javascript" src="js/sequence-slider.js"></script>
+		<!-- end sequence js -->
 		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
 		<script type="text/javascript" src="js/jQuery.BlackAndWhite.min.js"></script>

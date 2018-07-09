@@ -1,0 +1,12 @@
+ /* Sequence slider (2 theme (index4.html) for ie8)
+ ===================================================================*/
+#nav li {
+	display: inline;
+}
+
+body {
+	min-width: 960px;
+}
+#sequence-theme .model {
+	width: auto !important;
+}

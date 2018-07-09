@@ -1,0 +1,36 @@
+ /* Sequence slider (1 theme (index3.html) for ie)
+ ===================================================================*/
+#sequence ul {
+	margin-left: 0px !important;
+}
+#sequence-theme .main-text {
+	left: 0px !important;
+}
+
+
+
+#sequence-theme .animate-in .title {
+  left: 0px !important;
+	opacity: 1;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#sequence-theme .animate-in .subtitle-3 {
+	left: 286px;
+	opacity: 1;
+
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+#sequence-theme .animate-out .model {
+			left: 8% !important;
+}
+#sequence-theme .animate-in .model {
+			left: 8% !important;
+}
