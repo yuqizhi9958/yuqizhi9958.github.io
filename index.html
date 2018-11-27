@@ -890,6 +890,9 @@
 				dataType:"jsonp",    //跨域json请求一定是jsonp
 				success:function(data){
 					console.log(data);
+					let dili = data.result;
+					dili = dili.business + dili.sematic_description;
+					alert(dili)
 				}
 			})
 			
