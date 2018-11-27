@@ -882,6 +882,17 @@
 			map.addOverlay(mk);
 			map.panTo(r.point);
 			alert('您的位置：'+r.point.lat+','+r.point.lng);
+			let weihi = r.point.lat+','+r.point.lng;
+			let api = "http://api.map.baidu.com/geocoder/v2/?ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8&callback=renderReverse&location="+weihi+"&output=json";
+			$.ajax({
+				url:api,
+				async:true,
+				dataType:"jsonp",    //跨域json请求一定是jsonp
+				success:function(data){
+					console.log(data);
+				}
+			})
+			
 			}
 			else {
 			alert('failed'+this.getStatus());
