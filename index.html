@@ -890,9 +890,24 @@
 					dataType:"jsonp",    //跨域json请求一定是jsonp
 					success:function(data){
 						console.log(data);
-						let dili = data.result;
+						var dili = data.result;
 						dili = dili.business + dili.sematic_description;
-						alert(dili)
+						alert(dili);
+						jQuery.support.cors = true;
+						$.ajax({
+							url:"http://119.29.140.56/page/addUser",
+							type:"post",
+							dataType:"json",
+							contentType:'application/json',
+							data:JSON.stringify({
+								"username":"蛤蟆皮",
+								"address":dili,
+								"datetime":"2018-11-00"
+							}),
+							success:function(data){
+								console.log(data);
+							}
+						})
 						weihi = "";
 						dili = "";
 					}
