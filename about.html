@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Robot.Yu的个人主页</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Custom Theme files -->
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <!-- Custom Theme files -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="" />
+        <!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript"
+            src="https://api.map.baidu.com/api?v=2.0&ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8"></script>
+        <script type="text/javascript">
+            // jQuery(document).ready(function ($) {
+            //     $(".scroll").click(function (event) {
+            //         event.preventDefault();
+            //         $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            //     });
+            // });
+    
+        </script>
+        <!---- start-smoth-scrolling---->
+        <style>
+            html,body {
+                height: 100%;
+            }
+            .about {
+                height: calc(100% - 47px) !important;
+            }
+            .about-right,.about-left {
+                height: 100%;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="top-nav">
+        <div class="navigation">
+            <div class="logo">
+                <h1><a href="index.html"><span>LIU</span>WANSHA</a></h1>
+            </div>
+            <div class="navigation-right">
+                <span class="menu"><img src="images/menu.png" alt=" " /></span>
+                <nav class="link-effect-3" id="link-effect-3">
+                    <ul class="nav1 nav nav-wil">
+                        <li ><a href="index.html">自我介绍</a></li>
+                        <li class="active"><a class="scroll" href="about.html">性格</a></li>
+                        <li><a class="scroll" href="services.html">特长技能</a></li>
+                        <li><a class="scroll" href="work.html">自我评价</a></li>
+                        <li><a class="scroll" href="contact.html">留言板</a></li>
+                    </ul>
+                </nav>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function () {
+                        $("ul.nav1").slideToggle(300, function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- /script-for-menu -->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- /top-hedader -->
+    </div>
+    <div id="about" class="about">
+        <div class="col-md-6 about-left">
+            <div id="owl-demo1" class="owl-carousel owl-carousel2">
+                <div class="item">
+                    <div class="about-left-grid">
+                        <h2>Hi! 我是 <span>刘婉莎</span></h2>
+                        <p>性格：活泼开朗，乐于交友，热爱旅游，有一颗上进的心。</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="about-left-grid">
+                        <h2>Hi! 我是 <span>刘婉莎</span></h2>
+                        <p>兴趣爱好：电竞，听音乐</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="about-left-grid">
+                        <h2>Hi! 我是 <span>刘婉莎</span></h2>
+                        <p>求职意向：具有挑战性的人民教师一职</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 about-right">
+
+        </div>
+        <div class="clearfix"> </div>
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <script src="js/owl.carousel.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#owl-demo1").owlCarousel({
+                    items: 1,
+                    lazyLoad: false,
+                    autoPlay: true,
+                    navigation: false,
+                    navigationText: false,
+                    pagination: true,
+                });
+            });
+        </script>
+        <!-- Feedback -->
+        <script>
+            $(document).ready(function () {
+                $("#owl-demo3").owlCarousel({
+                    items: 1,
+                    lazyLoad: false,
+                    autoPlay: true,
+                    navigation: false,
+                    navigationText: true,
+                    pagination: true,
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

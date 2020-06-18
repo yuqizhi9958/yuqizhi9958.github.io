@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Robot.Yu的个人主页</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=2.0&ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8"></script>
+    <script type="text/javascript">
+            // jQuery(document).ready(function ($) {
+            //     $(".scroll").click(function (event) {
+            //         event.preventDefault();
+            //         $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            //     });
+            // });
+
+    </script>
+    <style>
+        #contact {
+            height: calc(100% - 47px);
+        }
+    </style>
+    <!---- start-smoth-scrolling---->
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="navigation">
+            <div class="logo">
+                <h1><a href="index.html"><span>LIU</span>WANSHA</a></h1>
+            </div>
+            <div class="navigation-right">
+                <span class="menu"><img src="images/menu.png" alt=" " /></span>
+                <nav class="link-effect-3" id="link-effect-3">
+                    <ul class="nav1 nav nav-wil">
+                        <li><a href="index.html">自我介绍</a></li>
+                        <li><a class="scroll" href="about.html">性格</a></li>
+                        <li><a class="scroll" href="services.html">特长技能</a></li>
+                        <li><a class="scroll" href="work.html">自我评价</a></li>
+                        <li class="active"><a class="scroll" href="contact.html">留言板</a></li>
+                    </ul>
+                </nav>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function () {
+                        $("ul.nav1").slideToggle(300, function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!-- /script-for-menu -->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- /top-hedader -->
+    </div>
+    <div class="footer" id="contact">
+        <div class="container">
+            <div class="service-head one text-center">
+                <h4>给我留言吧</h4>
+                <h3><span>留言板</span></h3>
+                <span class="border two"></span>
+            </div>
+            <div class="mail_us">
+                <div class="col-md-6 mail_left">
+                    <div class="contact-grid1-left">
+                        <div class="contact-grid1-left1">
+                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            <h4>留言历史记录</h4>
+                            <ul>
+                                <li><i>时间：2019-09-12</i>-留言人： 小美：<br> <a href="#">你的个人介绍网站做的好棒啊！能教我一下吗？</a></li>
+                                <li><i>时间：2019-09-18</i>-留言人： 小美：<br> <a href="#">你的个人介绍网站做的好棒啊！能教我一下吗？</a></li>
+                                <li><i>时间：2019-10-08</i>-留言人： 小美：<br> <a href="#">你的个人介绍网站做的好棒啊！能教我一下吗？</a></li>
+                                <li><i>时间：2019-10-15</i>-留言人： 小美：<br> <a href="#">你的个人介绍网站做的好棒啊！能教我一下吗？</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="col-md-6 mail_right">
+                    <form action="#" method="post">
+                        <input type="text" name="Name" value="请输入你的名字" onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = '请输入你的名字';}" required="">
+                        <textarea name="Message..." onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = '请输入留言信息';}"
+                            required="">请输入留言信息</textarea>
+                        <input type="submit" value="发送">
+
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

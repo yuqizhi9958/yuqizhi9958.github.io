@@ -1,7 +1,11 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-  	background: #FFf;
+	  background: #FFf;
+		height: 100%;
+}
+.top-nav {
+	background-color: #000;
 }
 body a{
 	transition:0.5s all;
@@ -15,7 +19,7 @@ body h1,h2,h3,h4,h5,h6{
 }
 /*-- header --*/
 #home {
-    background: url(../images/header-bg.jpg) no-repeat center top;
+    background: url(../images/QQ图片20200618214236.jpg) no-repeat center top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -455,8 +459,8 @@ span.border.one:after {
 .about-right{
 	    float: left;
 	padding:0;
-	background:url(../images/about-pic.jpg) no-repeat 0px 0px;
-	min-height:580px;
+	background:url(../images/QQ图片20200618215447.jpg) no-repeat center;
+	/* min-height:580px; */
 	background-size: cover;
    -o-background-size: cover;
    -webkit-background-size: cover;
@@ -589,9 +593,12 @@ span.border.one:after {
   transform: scale(0);
 }
 .wthree_about_right_grids {
-     margin-top: 4em;
+	 margin-top: 4em;
+	 text-align: center;
+	 
 }
 #services {
+	height: calc(100% - 47px) !important;
     padding: 5em 0;
     background: #1b242f;
 }
@@ -1070,7 +1077,8 @@ div#portfolioModal1,div#portfolioModal2,div#portfolioModal3,div#portfolioModal4,
     padding: 2em;
     border-bottom: 1px ridge rgb(214, 212, 212);
     background:#fff;
-    text-align: center;
+	text-align: center;
+	height: 100%;
 }
 .contact-grid1-left1 span {
     font-size: 1.5em;
@@ -1506,6 +1514,7 @@ span.border.two:after {
 	}
 	.mail_left {
 		padding: 0;
+		height: 100%;
 	}
 	.mail_us {
 		margin-bottom:12px;

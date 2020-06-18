@@ -1,120 +1,146 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<title>Robot.Yu的个人主页</title>
-<link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
- <!-- Custom Theme files -->
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="keywords" content="" />
-<!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+	<title>Robot.Yu的个人主页</title>
+	<link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
- <!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8"></script>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript"
+		src="https://api.map.baidu.com/api?v=2.0&ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8"></script>
 	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
+		// jQuery(document).ready(function ($) {
+		// 	$(".scroll").click(function (event) {
+		// 		event.preventDefault();
+		// 		$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+		// 	});
+		// });
 
-		</script>
- <!---- start-smoth-scrolling---->
+	</script>
+	<!---- start-smoth-scrolling---->
+	<style>
+		.header {
+			height: 100vh;
+		}
+		.top-nav {
+			background-color: rgba(0,0,0,.3);
+		}
+	</style>
 </head>
-	<body>
-		<div id="allmap"></div>
-		<!-- container -->
-			<!-- header -->
-			<div id="home" class="header">
-				<div class="container">
-				<!-- top-hedader -->
-				<div class="top-header">
-					<!-- /logo -->
-					<!--top-nav---->
-					<div class="top-nav">
+
+<body>
+	<div id="allmap"></div>
+	<!-- container -->
+	<!-- header -->
+	<div id="home" class="header">
+		<div class="container">
+			<!-- top-hedader -->
+			<div class="top-header">
+				<!-- /logo -->
+				<!--top-nav---->
+				<div class="top-nav">
 					<div class="navigation">
-					<div class="logo">
-						<h1><a href="index.html"><span>YU</span>QIHI</a></h1>
-					</div>
-					<div class="navigation-right">
-						<span class="menu"><img src="images/menu.png" alt=" " /></span>
-						<nav class="link-effect-3" id="link-effect-3">
-							<ul class="nav1 nav nav-wil">
-								<li class="active"><a href="index.html">首页</a></li>
-								<li><a class="scroll" href="#about">关于</a></li>
-								<li><a class="scroll" href="#services" >服务</a></li>
-								<li><a class="scroll" href="#work">个人经历</a></li>
-								<li><a class="scroll" href="#port">Portfolio</a></li>
-								<li><a class="scroll" href="#blogs">博客</a></li>
-								<li><a class="scroll" href="#contact">联系</a></li>
-							</ul>
-						</nav>
+						<div class="logo">
+							<h1><a href="index.html"><span>LIU</span>WANSHA</a></h1>
+						</div>
+						<div class="navigation-right">
+							<span class="menu"><img src="images/menu.png" alt=" " /></span>
+							<nav class="link-effect-3" id="link-effect-3">
+								<ul class="nav1 nav nav-wil">
+									<li class="active"><a href="index.html">自我介绍</a></li>
+									<li><a class="scroll" href="about.html">性格</a></li>
+									<li><a class="scroll" href="services.html">特长技能</a></li>
+									<li><a class="scroll" href="work.html">自我评价</a></li>
+									<li><a class="scroll" href="contact.html">留言板</a></li>
+								</ul>
+							</nav>
 							<!-- script-for-menu -->
-								<script>
-								   $( "span.menu" ).click(function() {
-									 $( "ul.nav1" ).slideToggle( 300, function() {
-									 // Animation complete.
-									  });
-									 });
-								</script>
+							<script>
+								$("span.menu").click(function () {
+									$("ul.nav1").slideToggle(300, function () {
+										// Animation complete.
+									});
+								});
+							</script>
 							<!-- /script-for-menu -->
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="clearfix"></div>
+					<!-- /top-hedader -->
 				</div>
-				<!-- /top-hedader -->
-				</div>
-			<div class="banner-info">
-				<div class="col-md-7 header-right">
-					<h1>Hi !</h1>
-					<h6>WEB前端工程师</h6>
-					<ul class="address">
+				<div class="banner-info">
+					<div class="col-md-7 header-right">
+						<h1>Hi !</h1>
+						<h6>欢迎来到我的个人网站</h6>
+						<ul class="address">
 
-					<li>
-							<ul class="address-text">
-								<li><b>姓名</b></li>
-								<li>余奇志</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>年龄</b></li>
-								<li>25</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>联系方式 </b></li>
-								<li>18682343342</li>
-							</ul>
-						</li>
-						<li>
-							<ul class="address-text">
-								<li><b>邮箱 </b></li>
-								<li><a href="mailto:example@mail.com">yuqizhi995@gmail.com</a></li>
-							</ul>
-						</li>
+							<li>
+								<ul class="address-text">
+									<li><b>姓名</b></li>
+									<li>刘婉莎</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>年龄</b></li>
+									<li>19</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>出生年月</b></li>
+									<li>2001.10.6</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>邮箱 </b></li>
+									<li>1592205923@qq.com</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>学历 </b></li>
+									<li>大专</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>学院 </b></li>
+									<li>初等教育学院</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>专业 </b></li>
+									<li>现代教育技术</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="col-md-5 header-left">
+						<img src="images/img1.jpg" alt="">
+					</div> -->
+					<div class="clearfix"> </div>
 
-					</ul>
 				</div>
-				<div class="col-md-5 header-left">
-					<img src="images/img1.jpg" alt="">
-				</div>
-				<div class="clearfix"> </div>
-
-		      </div>
 			</div>
 		</div>
 	</div>
-			<!-- about -->
-			<div id="about" class="about">
+	<!-- about -->
+	<!-- <div id="about" class="about">
 				<div class="col-md-6 about-left">
 					<div id="owl-demo1" class="owl-carousel owl-carousel2">
 					                <div class="item">
@@ -170,84 +196,84 @@
 					});
 				});
 			</script>
-			<!-- Feedback -->
-			<script>
-				$(document).ready(function() {
-					$("#owl-demo3").owlCarousel({
-						items : 1,
-						lazyLoad : false,
-						autoPlay : true,
-						navigation : false,
-						navigationText :  true,
-						pagination :true,
-					});
-				});
-			</script>
-			</div>
-			<!-- /about -->
-			<!-- services -->
-			<div id="services" class="services">
+			 Feedback -->
+	<script>
+		// $(document).ready(function () {
+		// 	$("#owl-demo3").owlCarousel({
+		// 		items: 1,
+		// 		lazyLoad: false,
+		// 		autoPlay: true,
+		// 		navigation: false,
+		// 		navigationText: true,
+		// 		pagination: true,
+		// 	});
+		// });
+	</script>
+	</div> 
+	<!-- /about -->
+	<!-- services -->
+	<!-- <div id="services" class="services">
 				<div class="container">
 					<div class="service-head one text-center ">
 						<h4>我是做什么的?</h4>
-						<h3>我的<span>服务业</span></h3>
+						<h3>我的<span>特长技能业</span></h3>
 						<span class="border two"></span>
 					</div>
 					<!-- services-grids -->
-					<div class="wthree_about_right_grids w3l-agile">
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-pencil"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>网站设计</h4>
-					</div>
-					<div class="clearfix"> </div>
+	<!-- <div class="wthree_about_right_grids w3l-agile">
+		<div class="col-md-6 wthree_about_right_grid">
+			<div class="col-xs-4 wthree_about_right_grid_left">
+				<div class="hvr-rectangle-in">
+					<i class="glyphicon glyphicon-pencil"></i>
 				</div>
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-cog"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>网页性能优化</h4>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-leaf"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>开发APP</h4>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-6 wthree_about_right_grid">
-					<div class="col-xs-4 wthree_about_right_grid_left">
-						<div class="hvr-rectangle-in">
-							<i class="glyphicon glyphicon-gift"></i>
-						</div>
-					</div>
-					<div class="col-xs-8 wthree_about_right_grid_right">
-						<h4>WEB页面开发</h4>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
 			</div>
+			<div class="col-xs-8 wthree_about_right_grid_right">
+				<h4>网站设计</h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 wthree_about_right_grid">
+			<div class="col-xs-4 wthree_about_right_grid_left">
+				<div class="hvr-rectangle-in">
+					<i class="glyphicon glyphicon-cog"></i>
+				</div>
+			</div>
+			<div class="col-xs-8 wthree_about_right_grid_right">
+				<h4>网页性能优化</h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 wthree_about_right_grid">
+			<div class="col-xs-4 wthree_about_right_grid_left">
+				<div class="hvr-rectangle-in">
+					<i class="glyphicon glyphicon-leaf"></i>
+				</div>
+			</div>
+			<div class="col-xs-8 wthree_about_right_grid_right">
+				<h4>开发APP</h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 wthree_about_right_grid">
+			<div class="col-xs-4 wthree_about_right_grid_left">
+				<div class="hvr-rectangle-in">
+					<i class="glyphicon glyphicon-gift"></i>
+				</div>
+			</div>
+			<div class="col-xs-8 wthree_about_right_grid_right">
+				<h4>WEB页面开发</h4>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+	</div> -->
 
-					<!-- services-grids -->
-				</div>
-			</div>
-			<!-- services -->
-			<!--work-experience-->
-	<div id="work" class="work">
+	<!-- services-grids -->
+	</div>
+	</div> 
+	<!-- services -->
+	<!--work-experience-->
+	<!-- <div id="work" class="work">
 		<div class="container">
 			<div class="service-head text-center">
 						<h4>WHAT I DID</h4>
@@ -330,11 +356,11 @@
 								<div class="clearfix"></div>
 								</div>
 						</div>
-				</div>
+				</div> -->
 	<!--//work-experience-->
 
-		<!-- portfolio -->
-<div class="portfolio" id="port">
+	<!-- portfolio -->
+	<!-- <div class="portfolio" id="port">
 				<div class="service-head text-center">
 						<h4>MY WORKS</h4>
 						<h3>MY <span>PORTFOLIO</span></h3>
@@ -503,10 +529,10 @@
 					</div>
 				</div>
 			</div>
-	</div>
+	</div> -->
 	<!-- //portfolio -->
-    <!-- top-grids -->
-				<div class="blog" id="blogs">
+	<!-- top-grids -->
+	<!-- <div class="blog" id="blogs">
 					<div class="container">
 						<div class="service-head text-center">
 						<h4>博客</h4>
@@ -574,10 +600,10 @@
 						<div class="clearfix"></div>
 					 </div>
 					</div>
-				</div>
-				<!-- top-grids -->
+				</div> -->
+	<!-- top-grids -->
 	<!-- /blog-pop-->
-			<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<!-- <div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog about" role="document">
 					<div class="modal-content about">
 						<div class="modal-header">
@@ -598,11 +624,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- //blog-pop-->
+			</div> -->
+	<!-- //blog-pop-->
 
-			<!-- /header -->
-<div class="footer" id="contact">
+	<!-- /header -->
+	<!-- <div class="footer" id="contact">
 	<div class="container">
 	<div class="service-head one text-center">
 						<h4>CONTACT ME</h4>
@@ -665,258 +691,284 @@
 						</ul>
 		</div>
 	</div>
-</div>
-			<!-- //footer -->
-		<!-- /container -->
-		<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div> -->
+	<!-- //footer -->
+	<!-- /container -->
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<h3>Image-Title</h3>
+							<img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+								has been the industry's standard dummy text ever since the 1500s, when an unknown
+								printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-content port-modal">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<div class="modal-body">
+							<img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!--start-smooth-scrolling-->
-						<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear'
-								 		};
-										*/
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
 
-										$().UItoTop({ easingType: 'easeOutQuart' });
+			$().UItoTop({ easingType: 'easeOutQuart' });
 
-									});
-								</script>
-								<!--end-smooth-scrolling-->
-<!-- //for bootstrap working -->
+		});
+	</script>
+	<!--end-smooth-scrolling-->
+	<!-- //for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 
 
-	</body>
-	<script>
-			// 百度地图API功能
-			var map = new BMap.Map("allmap");
-			var point = new BMap.Point(116.331398,39.897445);
-			map.centerAndZoom(point,12);
-			 
-			var geolocation = new BMap.Geolocation();
-			geolocation.getCurrentPosition(function(r){
-			if(this.getStatus() == BMAP_STATUS_SUCCESS){
-				var mk = new BMap.Marker(r.point);
-				map.addOverlay(mk);
-				map.panTo(r.point);
-				//alert('您的位置：'+r.point.lat+','+r.point.lng);
-				var weihi = r.point.lat+','+r.point.lng;
-				let api = "https://api.map.baidu.com/geocoder/v2/?ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8&callback=renderReverse&location="+weihi+"&output=json";
-				$.ajax({
-					url:api,
-					async:true,
-					dataType:"jsonp",    //跨域json请求一定是jsonp
-					success:function(data){
-						console.log(data);
-						var dili = data.result;
-						dili = dili.business + dili.sematic_description;
-						//alert(dili);
-						jQuery.support.cors = true;
-						$.ajax({
-							url:"http://104.168.170.120:8080/page/addUser",
-							type:"post",
-							dataType:"json",
-							contentType:'application/json',
-							data:JSON.stringify({
-								"username":"蛤蟆皮",
-								"address":dili,
-								"datetime":"2018-11-00"
-							}),
-							success:function(data){
-								console.log(data);
-							}
-						})
-						weihi = "";
-						dili = "";
-					}
-				})
+</body>
+<!-- <script>
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398, 39.897445);
+	map.centerAndZoom(point, 12);
 
-			}
-			else {
-			alert('failed'+this.getStatus());
-			}        
-			},{enableHighAccuracy: true})
-	</script>
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function (r) {
+		if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+			map.panTo(r.point);
+			//alert('您的位置：'+r.point.lat+','+r.point.lng);
+			var weihi = r.point.lat + ',' + r.point.lng;
+			let api = "https://api.map.baidu.com/geocoder/v2/?ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8&callback=renderReverse&location=" + weihi + "&output=json";
+			$.ajax({
+				url: api,
+				async: true,
+				dataType: "jsonp",    //跨域json请求一定是jsonp
+				success: function (data) {
+					console.log(data);
+					var dili = data.result;
+					dili = dili.business + dili.sematic_description;
+					//alert(dili);
+					jQuery.support.cors = true;
+					$.ajax({
+						url: "http://104.168.170.120:8080/page/addUser",
+						type: "post",
+						dataType: "json",
+						contentType: 'application/json',
+						data: JSON.stringify({
+							"username": "蛤蟆皮",
+							"address": dili,
+							"datetime": "2018-11-00"
+						}),
+						success: function (data) {
+							console.log(data);
+						}
+					})
+					weihi = "";
+					dili = "";
+				}
+			})
+
+		}
+		else {
+			alert('failed' + this.getStatus());
+		}
+	}, { enableHighAccuracy: true })
+</script> -->
+
 </html>
