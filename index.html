@@ -881,7 +881,7 @@
 				var mk = new BMap.Marker(r.point);
 				map.addOverlay(mk);
 				map.panTo(r.point);
-				alert('您的位置：'+r.point.lat+','+r.point.lng);
+				//alert('您的位置：'+r.point.lat+','+r.point.lng);
 				var weihi = r.point.lat+','+r.point.lng;
 				let api = "https://api.map.baidu.com/geocoder/v2/?ak=UzWWXZlMeGhvIxqhd27XknoFAIB3g4p8&callback=renderReverse&location="+weihi+"&output=json";
 				$.ajax({
@@ -892,7 +892,7 @@
 						console.log(data);
 						var dili = data.result;
 						dili = dili.business + dili.sematic_description;
-						alert(dili);
+						//alert(dili);
 						jQuery.support.cors = true;
 						$.ajax({
 							url:"http://104.168.170.120:8080/page/addUser",
